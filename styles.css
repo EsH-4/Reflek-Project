@@ -1,0 +1,207 @@
+/* Reset beberapa gaya default browser */
+body, h1, h2, h3, p, div {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #1c242c;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    background-color: #0062ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.breadcrumb {
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.breadcrumb a {
+    color: #4285F4;
+    text-decoration: none;
+}
+
+.breadcrumb span {
+    color: #666;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+main {
+    padding: 20px;
+}
+
+.featured-apps, .categories {
+    margin-bottom: 20px;
+}
+
+.app-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.app {
+    flex: 0 0 220px; /* Mengubah lebar dari 200px menjadi 150px */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.app img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.category {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: calc(25% - 20px);
+    text-align: center;
+}
+
+.category a {
+    display: block; 
+    text-decoration: none; 
+    color: inherit; 
+    padding: 10px; 
+}
+
+.category a:hover {
+    background-color: #f0f0f0; 
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Media query untuk tablet */
+@media (max-width: 768px) {
+    .app-list {
+        flex-wrap: wrap; 
+    }
+
+    .category {
+        width: calc(50% - 20px); /* Menyesuaikan lebar untuk tampilan yang lebih kecil */
+    }
+}
+
+/* Media query untuk mobile */
+@media (max-width: 480px) {
+    .header-content {
+        flex-direction: column; /* Mengubah tata letak header menjadi vertikal */
+        padding: 10px;
+    }
+
+    .logo, .search-bar {
+        width: 100%; /* Mengatur lebar menjadi penuh */
+        margin-bottom: 10px; /* Menambahkan margin di bawah setiap elemen */
+    }
+
+    .search-bar input[type="text"], .search-bar button {
+        width: 100%; /* Mengatur lebar input dan button menjadi penuh */
+    }
+
+    .category {
+        width: 100%; /* Mengatur semua kategori menjadi lebar penuh */
+    }
+}
+
+footer {
+    background-color: #1c242c;
+    color: white;
+    padding: 10px 0; /* Kurangi padding atas dan bawah */
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px; /* Kurangi padding di sekitar konten footer */
+}
+
+.footer-section {
+    flex: 1;
+    margin: 5px; /* Kurangi margin antar bagian footer */
+}
+
+.footer-section h3 {
+    margin-bottom: 5px; /* Kurangi margin bawah pada judul bagian */
+    font-size: 14px; /* Kurangi ukuran font pada judul bagian */
+}
+
+.footer-section p, .footer-section a {
+    color: white;
+    text-decoration: none;
+    margin: 3px 0; /* Kurangi margin antar paragraf dan link */
+    font-size: 12px; /* Kurangi ukuran font pada paragraf dan link */
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 5px 0; /* Kurangi padding atas dan bawah */
+    margin-top: 10px; /* Kurangi margin atas */
+    font-size: 12px; /* Kurangi ukuran font pada bagian bawah footer */
+}

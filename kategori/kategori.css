@@ -1,0 +1,228 @@
+/* Tambahkan ini ke file rpg.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.breadcrumb {
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.breadcrumb a {
+    color: #4285F4;
+    text-decoration: none;
+}
+
+.breadcrumb span {
+    color: #666;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+/* Gaya dasar untuk halaman kategori RPG */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ececec;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1c242c;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+main {
+    padding: 20px;
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.game {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.game img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.game h3 {
+    color: #4a148c; /* Warna yang sesuai dengan tema RPG */
+}
+
+.app-list {
+    display: flex;
+    flex-wrap: wrap; /* Mengubah kembali ke wrap agar elemen dapat bungkus ke baris berikutnya */
+    overflow-x: hidden; /* Menghilangkan pengguliran horizontal */
+    gap: 20px;
+    justify-content: center; /* Menambahkan ini untuk memusatkan elemen secara horizontal */
+    padding: 10px 0;
+}
+
+.app {
+    flex: 0 0 150px; /* Mengubah lebar dari 200px menjadi 150px */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.app img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Menambahkan border-radius untuk membuat sudut gambar tidak tajam */
+}
+
+/* Media query untuk tablet */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .logo img {
+        margin-bottom: 10px; /* Menambahkan margin di bawah logo */
+    }
+
+    .search-bar {
+        width: 100%; /* Mengatur lebar search bar menjadi penuh */
+    }
+
+    .game-list {
+        justify-content: space-around; /* Menyesuaikan penjajaran item */
+    }
+
+    .game {
+        width: calc(50% - 40px); /* Menyesuaikan lebar game untuk tampilan dua kolom */
+        margin: 10px; /* Menyesuaikan margin */
+    }
+}
+
+/* Media query untuk mobile */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 30px; /* Mengurangi ukuran logo */
+    }
+
+    .search-bar input[type="text"], .search-bar button {
+        width: 100%; /* Mengatur lebar input dan button menjadi penuh */
+        margin-bottom: 10px; /* Menambahkan margin di bawah setiap elemen */
+    }
+
+    .game-list {
+        flex-direction: column; /* Mengubah tata letak menjadi vertikal */
+    }
+
+    .game {
+        width: 100%; /* Mengatur lebar game menjadi penuh */
+        margin: 10px 0; /* Menyesuaikan margin */
+    }
+}
+
+footer {
+    background-color: #1c242c;
+    color: white;
+    padding: 10px 0; /* Kurangi padding atas dan bawah */
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px; /* Kurangi padding di sekitar konten footer */
+}
+
+.footer-section {
+    flex: 1;
+    margin: 5px; /* Kurangi margin antar bagian footer */
+}
+
+.footer-section h3 {
+    margin-bottom: 5px; /* Kurangi margin bawah pada judul bagian */
+    font-size: 14px; /* Kurangi ukuran font pada judul bagian */
+}
+
+.footer-section p, .footer-section a {
+    color: white;
+    text-decoration: none;
+    margin: 3px 0; /* Kurangi margin antar paragraf dan link */
+    font-size: 12px; /* Kurangi ukuran font pada paragraf dan link */
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 5px 0; /* Kurangi padding atas dan bawah */
+    margin-top: 10px; /* Kurangi margin atas */
+    font-size: 12px; /* Kurangi ukuran font pada bagian bawah footer */
+}
